@@ -1454,12 +1454,12 @@ www.isabellenhuette.de&lt;p&gt;
 <part name="U$4" library="microbuilder" deviceset="GND" device=""/>
 <part name="BMP390L_JP1" library="microbuilder" deviceset="HEADER-1X8" device="70MIL"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R2" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMK" device="" package3d_urn="urn:adsk.eagle:package:25215/1"/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1505,9 +1505,6 @@ www.isabellenhuette.de&lt;p&gt;
 <instance part="P+5" gate="VCC" x="27.94" y="121.92" smashed="yes">
 <attribute name="VALUE" x="25.4" y="119.38" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+2" gate="VCC" x="83.82" y="101.6" smashed="yes">
-<attribute name="VALUE" x="81.28" y="99.06" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="JP1" gate="G$1" x="114.3" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="120.65" y="103.505" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="120.65" y="114.3" size="1.778" layer="96" rot="R180"/>
@@ -1524,6 +1521,9 @@ www.isabellenhuette.de&lt;p&gt;
 <instance part="R2" gate="G$1" x="134.62" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="135.9916" y="107.95" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="138.43" y="112.141" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="P+2" gate="VCC" x="86.36" y="101.6" smashed="yes">
+<attribute name="VALUE" x="83.82" y="99.06" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -1594,6 +1594,12 @@ www.isabellenhuette.de&lt;p&gt;
 <wire x1="27.94" y1="116.84" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="BMP390L_JP1" gate="A" pin="1"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
+<wire x1="86.36" y1="99.06" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="3V3@1"/>
+<wire x1="86.36" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT" class="0">
@@ -1739,14 +1745,6 @@ www.isabellenhuette.de&lt;p&gt;
 <pinref part="U$1" gate="G$1" pin="GPIO11/SCLK"/>
 <wire x1="91.44" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
 <junction x="78.74" y="68.58"/>
-</segment>
-</net>
-<net name="3V3@1" class="2">
-<segment>
-<wire x1="91.44" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="96.52" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-<pinref part="U$1" gate="G$1" pin="3V3@1"/>
 </segment>
 </net>
 <net name="5V0@1" class="0">

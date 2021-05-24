@@ -1602,16 +1602,11 @@ www.isabellenhuette.de&lt;p&gt;
 <wire x1="86.36" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="INT" class="0">
+<net name="INT_2" class="0">
 <segment>
 <pinref part="BNO085_JP1" gate="A" pin="6"/>
 <wire x1="43.18" y1="30.48" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
 <label x="58.42" y="30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="BMP390L_JP1" gate="A" pin="8"/>
-<wire x1="35.56" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="55.88" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PS1" class="0">
@@ -1650,11 +1645,6 @@ www.isabellenhuette.de&lt;p&gt;
 </segment>
 </net>
 <net name="CS_2" class="0">
-<segment>
-<pinref part="BNO085_JP2" gate="A" pin="6"/>
-<wire x1="25.4" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
-<label x="10.16" y="30.48" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="43.18" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
 <label x="55.88" y="68.58" size="1.778" layer="95"/>
@@ -1769,6 +1759,20 @@ www.isabellenhuette.de&lt;p&gt;
 <wire x1="81.28" y1="101.6" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GPIO5"/>
 <wire x1="81.28" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="INT_1" class="0">
+<segment>
+<pinref part="BMP390L_JP1" gate="A" pin="8"/>
+<wire x1="35.56" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
+<label x="55.88" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CS_3" class="0">
+<segment>
+<pinref part="BNO085_JP2" gate="A" pin="6"/>
+<wire x1="25.4" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
+<label x="10.16" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -1522,7 +1522,7 @@ www.isabellenhuette.de&lt;p&gt;
 <attribute name="VALUE" x="147.32" y="96.52" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R2" gate="G$1" x="134.62" y="109.22" smashed="yes" rot="R180">
-<attribute name="NAME" x="138.43" y="107.8484" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="135.9916" y="107.95" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="138.43" y="112.141" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>

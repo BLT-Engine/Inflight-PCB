@@ -5705,7 +5705,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GPIO10/MOSI"/>
-<wire x1="91.44" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

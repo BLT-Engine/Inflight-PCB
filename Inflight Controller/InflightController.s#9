@@ -5636,14 +5636,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <label x="55.88" y="106.68" size="1.778" layer="95"/>
 <pinref part="BMP390L_JP1" gate="A" pin="5"/>
-<pinref part="U$1" gate="G$1" pin="GPIO9/MISO"/>
-<wire x1="91.44" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="71.12" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="106.68" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
-<junction x="76.2" y="71.12"/>
-<wire x1="76.2" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
-<label x="55.88" y="71.12" size="1.778" layer="95"/>
-<pinref part="ICM20649_JP2" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="SDI/SDA" class="0">
@@ -5651,11 +5645,7 @@ Source: www.vishay.com .. rwm.pdf</description>
 <wire x1="35.56" y1="104.14" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
 <label x="55.88" y="104.14" size="1.778" layer="95"/>
 <pinref part="BMP390L_JP1" gate="A" pin="6"/>
-<pinref part="U$1" gate="G$1" pin="GPIO10/MOSI"/>
-<wire x1="91.44" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="73.66" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
-<junction x="73.66" y="73.66"/>
-<wire x1="73.66" y1="73.66" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="53.34" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="53.34" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
@@ -5667,12 +5657,8 @@ Source: www.vishay.com .. rwm.pdf</description>
 <segment>
 <label x="55.88" y="109.22" size="1.778" layer="95"/>
 <pinref part="BMP390L_JP1" gate="A" pin="4"/>
-<pinref part="U$1" gate="G$1" pin="GPIO11/SCLK"/>
-<wire x1="91.44" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="68.58" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="55.88" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
-<junction x="78.74" y="68.58"/>
-<wire x1="78.74" y1="68.58" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="55.88" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="55.88" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
@@ -5700,6 +5686,26 @@ Source: www.vishay.com .. rwm.pdf</description>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="109.22" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO9/MISO"/>
+<wire x1="91.44" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="ICM20649_JP2" gate="A" pin="4"/>
+<label x="55.88" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO11/SCLK"/>
+<wire x1="91.44" y1="68.58" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO10/MOSI"/>
+<wire x1="91.44" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
