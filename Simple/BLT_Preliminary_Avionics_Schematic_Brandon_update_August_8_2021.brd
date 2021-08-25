@@ -206,6 +206,7 @@
 <wire x1="106.15395625" y1="107.95" x2="110.49" y2="103.61395625" width="0.0762" layer="20" curve="-90"/>
 <wire x1="110.49" y1="103.61395625" x2="110.49" y2="97.536" width="0.0762" layer="20"/>
 <wire x1="-7.62" y1="97.155" x2="-7.62" y2="97.2312" width="0.0254" layer="20"/>
+<text x="8.89" y="99.314" size="1.778" layer="121">Beach Launch Team PCB S2.1</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -1114,11 +1115,8 @@ design rules under a new name.</description>
 <vertex x="-3.066234375" y="47.244"/>
 <vertex x="105.174234375" y="47.244" curve="90"/>
 </polygon>
-<wire x1="1.27" y1="104.902" x2="2.728" y2="103.444" width="0.1524" layer="1"/>
-<wire x1="2.728" y1="103.444" x2="2.728" y2="100.584" width="0.1524" layer="1"/>
-<wire x1="94.244" y1="89.778" x2="91.832" y2="89.778" width="0.1524" layer="1"/>
-<wire x1="91.832" y1="89.778" x2="90.932" y2="90.678" width="0.1524" layer="1"/>
-<via x="90.932" y="90.678" extent="1-16" drill="0.35"/>
+<wire x1="88.7476" y1="66.2178" x2="94.244" y2="89.778" width="0" layer="19" extent="1-1"/>
+<wire x1="2.728" y1="100.584" x2="1.27" y2="104.902" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
 <contactref element="U$1" pad="13-SCK/LED"/>
@@ -1310,8 +1308,8 @@ design rules under a new name.</description>
 <contactref element="BT1" pad="P1"/>
 <contactref element="BT1" pad="P2"/>
 <wire x1="94.13875" y1="100.33" x2="94.244" y2="100.328" width="0.1524" layer="1"/>
-<wire x1="94.2975" y1="85.4075" x2="94.2975" y2="83.058" width="0.254" layer="1"/>
-<wire x1="94.2975" y1="83.058" x2="94.2975" y2="79.375" width="0.254" layer="1"/>
+<wire x1="94.2975" y1="85.4075" x2="94.2975" y2="83.566" width="0.254" layer="1"/>
+<wire x1="94.2975" y1="83.566" x2="94.2975" y2="79.375" width="0.254" layer="1"/>
 <wire x1="96.52" y1="87.63" x2="94.2975" y2="85.4075" width="0.254" layer="1"/>
 <wire x1="96.52" y1="97.94875" x2="96.52" y2="87.63" width="0.254" layer="1"/>
 <wire x1="94.2975" y1="100.17125" x2="96.52" y2="97.94875" width="0.254" layer="1"/>
@@ -1323,15 +1321,16 @@ design rules under a new name.</description>
 <wire x1="22.79385" y1="91.05545" x2="23.9404" y2="92.202" width="0.254" layer="16"/>
 <wire x1="23.9404" y1="92.202" x2="31.75" y2="92.202" width="0.254" layer="16"/>
 <via x="31.75" y="92.202" extent="1-16" drill="0.35"/>
-<wire x1="31.75" y1="92.202" x2="55.626" y2="92.202" width="0.254" layer="1"/>
-<wire x1="55.626" y1="92.202" x2="58.42" y2="89.408" width="0.254" layer="1"/>
-<via x="58.42" y="89.408" extent="1-16" drill="0.35"/>
-<wire x1="58.42" y1="89.408" x2="62.992" y2="89.408" width="0.254" layer="16"/>
-<via x="62.992" y="89.408" extent="1-16" drill="0.35"/>
-<wire x1="62.992" y1="89.408" x2="87.9475" y2="89.408" width="0.254" layer="1"/>
-<wire x1="87.9475" y1="89.408" x2="94.2975" y2="83.058" width="0.254" layer="1"/>
+<wire x1="31.75" y1="92.202" x2="55.88" y2="92.202" width="0.254" layer="1"/>
+<wire x1="55.88" y1="92.202" x2="58.928" y2="89.154" width="0.254" layer="1"/>
 <wire x1="9.652" y1="90.678" x2="8.89" y2="91.44" width="0.254" layer="1"/>
 <wire x1="20.574" y1="90.678" x2="9.652" y2="90.678" width="0.254" layer="1"/>
+<wire x1="58.928" y1="89.154" x2="58.928" y2="83.566" width="0.254" layer="1"/>
+<wire x1="58.928" y1="83.566" x2="64.008" y2="83.566" width="0.254" layer="1"/>
+<via x="64.008" y="83.566" extent="1-16" drill="0.35"/>
+<wire x1="64.008" y1="83.566" x2="66.802" y2="83.566" width="0.254" layer="16"/>
+<via x="66.802" y="83.566" extent="1-16" drill="0.35"/>
+<wire x1="66.802" y1="83.566" x2="94.2975" y2="83.566" width="0.254" layer="1"/>
 </signal>
 <signal name="CS1">
 <contactref element="U$1" pad="36-PWM"/>
