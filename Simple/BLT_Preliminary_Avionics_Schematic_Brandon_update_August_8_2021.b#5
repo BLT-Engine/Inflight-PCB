@@ -194,10 +194,10 @@
 <wire x1="-3.094584375" y1="46.98990625" x2="125.792121875" y2="46.987553125" width="0" layer="20"/>
 <wire x1="125.792121875" y1="46.987553125" x2="131.06178125" y2="51.74911875" width="0" layer="20" curve="90.364639"/>
 <wire x1="131.06178125" y1="51.74911875" x2="131.06178125" y2="97.6124625" width="0" layer="20"/>
-<hole x="-4.318" y="104.648" drill="2.5"/>
-<hole x="-4.318" y="50.292" drill="2.5"/>
-<hole x="127.762" y="104.648" drill="2.5"/>
-<hole x="127.762" y="51.308" drill="2.5"/>
+<hole x="-3.81" y="104.394" drill="2.5"/>
+<hole x="-3.81" y="50.8" drill="2.5"/>
+<hole x="127.254" y="104.394" drill="2.5"/>
+<hole x="127.254" y="50.8" drill="2.5"/>
 <text x="70.612" y="97.028" size="1.778" layer="121">3.3V</text>
 <text x="72.644" y="84.582" size="1.778" layer="121">5V</text>
 <wire x1="-7.62" y1="97.282" x2="-7.62" y2="103.61395625" width="0.0762" layer="20"/>
@@ -1294,7 +1294,7 @@ design rules under a new name.</description>
 <element name="U$3" library="BLTFootprints" package="1X04" value="BUCK_CONVERTER3.3V" x="61.722" y="94.488" smashed="yes" rot="R90">
 <attribute name="VOLTAGE" value="3.3V" x="113.792" y="173.228" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U$4" library="BLTFootprints" package="1X05" value="GT-U7_GPS" x="7.5692" y="73.8632" smashed="yes"/>
+<element name="U$4" library="BLTFootprints" package="1X05" value="GT-U7_GPS" x="10.8712" y="73.3552" smashed="yes"/>
 <element name="U$5" library="BLTFootprints" package="1X07" value="" x="64.5414" y="72.898" smashed="yes" rot="R270"/>
 <element name="U$6" library="BLTFootprints" package="1X04" value="BUCK_CONVERTER5V" x="61.722" y="79.756" smashed="yes" rot="R90">
 <attribute name="VOLTAGE" value="5V" x="140.462" y="103.886" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1350,10 +1350,9 @@ design rules under a new name.</description>
 <wire x1="65.24625" y1="71.4375" x2="65.24625" y2="86.39175" width="0.508" layer="1"/>
 <wire x1="65.24625" y1="71.4375" x2="65.33515" y2="71.3105" width="0.508" layer="1"/>
 <wire x1="19.05" y1="104.902" x2="17.272" y2="106.68" width="0.508" layer="1"/>
-<wire x1="13.17625" y1="68.2625" x2="35.2425" y2="68.2625" width="0.508" layer="1"/>
-<wire x1="7.62" y1="73.81875" x2="13.17625" y2="68.2625" width="0.508" layer="1"/>
+<wire x1="15.3273125" y1="68.2625" x2="35.2425" y2="68.2625" width="0.508" layer="1"/>
 <wire x1="35.2425" y1="68.2625" x2="35.2679" y2="68.2244" width="0.508" layer="1"/>
-<wire x1="7.62" y1="73.81875" x2="7.5692" y2="73.8632" width="0.508" layer="1"/>
+<wire x1="15.3273125" y1="68.2625" x2="10.8712" y2="73.3552" width="0.508" layer="1"/>
 <wire x1="61.722" y1="94.488" x2="62.26175" y2="93.94825" width="0.508" layer="1"/>
 <wire x1="62.26175" y1="93.94825" x2="62.26175" y2="89.37625" width="0.508" layer="1"/>
 <wire x1="35.2679" y1="68.2244" x2="50.50653125" y2="68.2244" width="0.508" layer="16"/>
@@ -1564,9 +1563,9 @@ design rules under a new name.</description>
 <signal name="TX2">
 <contactref element="U$1" pad="8-TX2/IN1"/>
 <contactref element="U$4" pad="TXD"/>
-<wire x1="15.1892" y1="73.8632" x2="18.034" y2="76.708" width="0.1524" layer="1"/>
+<wire x1="18.4912" y1="73.3552" x2="18.034" y2="73.8124" width="0.1524" layer="1"/>
 <wire x1="18.034" y1="81.28" x2="22.606" y2="85.852" width="0.1524" layer="1"/>
-<wire x1="18.034" y1="76.708" x2="18.034" y2="81.28" width="0.1524" layer="1"/>
+<wire x1="18.034" y1="73.8124" x2="18.034" y2="81.28" width="0.1524" layer="1"/>
 <via x="22.606" y="85.852" extent="1-16" drill="0.35"/>
 <wire x1="22.606" y1="85.852" x2="25.4" y2="88.646" width="0.1524" layer="16"/>
 <wire x1="31.75" y1="88.646" x2="32.004" y2="88.9" width="0.1524" layer="16"/>
@@ -1591,8 +1590,8 @@ design rules under a new name.</description>
 <wire x1="25.146" y1="90.678" x2="22.606" y2="88.138" width="0.1524" layer="16"/>
 <via x="22.606" y="88.138" extent="1-16" drill="0.35"/>
 <wire x1="22.606" y1="88.138" x2="14.986" y2="80.518" width="0.1524" layer="1"/>
-<wire x1="14.986" y1="76.2" x2="12.6492" y2="73.8632" width="0.1524" layer="1"/>
-<wire x1="14.986" y1="80.518" x2="14.986" y2="76.2" width="0.1524" layer="1"/>
+<wire x1="14.986" y1="74.3204" x2="15.9512" y2="73.3552" width="0.1524" layer="1"/>
+<wire x1="14.986" y1="80.518" x2="14.986" y2="74.3204" width="0.1524" layer="1"/>
 </signal>
 <signal name="5V">
 <contactref element="U$1" pad="VIN"/>
@@ -1840,7 +1839,7 @@ design rules under a new name.</description>
 <signal name="CANTX">
 <contactref element="U1" pad="1"/>
 <contactref element="U$1" pad="22-A8/CTX1"/>
-<wire x1="39.0525" y1="105.41" x2="36.138" y2="102.4955" width="0.1524" layer="1"/>
+<wire x1="38.2905" y1="105.918" x2="36.138" y2="103.7655" width="0.1524" layer="1"/>
 <wire x1="51.1175" y1="101.6" x2="51.1175" y2="104.14" width="0.1524" layer="1"/>
 <wire x1="53.34" y1="77.597" x2="53.34" y2="99.3775" width="0.1524" layer="1"/>
 <wire x1="52.8955" y1="77.1525" x2="53.34" y2="77.597" width="0.1524" layer="1"/>
@@ -1849,11 +1848,11 @@ design rules under a new name.</description>
 <wire x1="45.4025" y1="78.105" x2="45.72" y2="78.105" width="0.1524" layer="16"/>
 <wire x1="44.7675" y1="78.74" x2="45.4025" y2="78.105" width="0.1524" layer="16"/>
 <wire x1="44.45" y1="78.74" x2="44.7675" y2="78.74" width="0.1524" layer="16"/>
-<wire x1="36.138" y1="102.4955" x2="36.138" y2="101.981" width="0.1524" layer="1"/>
+<wire x1="36.138" y1="103.7655" x2="36.138" y2="101.981" width="0.1524" layer="1"/>
 <via x="46.6725" y="77.1525" extent="1-16" drill="0.35"/>
 <wire x1="53.34" y1="99.3775" x2="51.1175" y2="101.6" width="0.1524" layer="1"/>
-<wire x1="51.1175" y1="104.14" x2="49.8475" y2="105.41" width="0.1524" layer="1"/>
-<wire x1="39.0525" y1="105.41" x2="49.8475" y2="105.41" width="0.1524" layer="1"/>
+<wire x1="51.1175" y1="104.14" x2="49.3395" y2="105.918" width="0.1524" layer="1"/>
+<wire x1="38.2905" y1="105.918" x2="49.3395" y2="105.918" width="0.1524" layer="1"/>
 </signal>
 <signal name="CANRX">
 <contactref element="U1" pad="4"/>
