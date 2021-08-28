@@ -1628,12 +1628,12 @@ design rules under a new name.</description>
 <wire x1="59.91225" y1="86.45525" x2="59.91225" y2="97.79" width="0.508" layer="1"/>
 <wire x1="61.722" y1="84.836" x2="61.5315" y2="84.836" width="0.508" layer="1"/>
 <contactref element="LIPO_CONNECTOR" pad="2"/>
-<wire x1="53.34" y1="102.362" x2="57.11825" y2="102.362" width="0.508" layer="1"/>
+<wire x1="53.34" y1="102.362" x2="56.86425" y2="102.362" width="0.508" layer="1"/>
 <wire x1="61.722" y1="99.568" x2="60.96" y2="98.806" width="0.508" layer="1"/>
 <wire x1="60.96" y1="98.806" x2="59.944" y2="97.79" width="0.508" layer="1"/>
 <wire x1="59.944" y1="97.79" x2="59.91225" y2="97.79" width="0.508" layer="1"/>
-<wire x1="60.67425" y1="98.806" x2="60.96" y2="98.806" width="0.508" layer="1"/>
-<wire x1="57.11825" y1="102.362" x2="60.67425" y2="98.806" width="0.508" layer="1"/>
+<wire x1="60.42025" y1="98.806" x2="60.96" y2="98.806" width="0.508" layer="1"/>
+<wire x1="56.86425" y1="102.362" x2="60.42025" y2="98.806" width="0.508" layer="1"/>
 </signal>
 <signal name="VBAT">
 <contactref element="U$1" pad="VBAT"/>
