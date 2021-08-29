@@ -6734,8 +6734,9 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="LIPO_CONNECTOR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH4" package3d_urn="urn:adsk.eagle:package:38054/1"/>
 <part name="U1" library="SN65HVD230" deviceset="SN65HVD230" device=""/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
-<part name="CAN_HEADER" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="2.54MM_SCREWTERM" package3d_urn="urn:adsk.eagle:package:38059/1"/>
 <part name="120" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="1206" package3d_urn="urn:adsk.eagle:package:39654/1" value=" "/>
+<part name="LIPO_CONNECTOR_2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="CAN_CONNECTOR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -6784,13 +6785,17 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <attribute name="NAME" x="175.26" y="16.764" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="175.26" y="13.716" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="CAN_HEADER" gate="G$1" x="165.1" y="-5.08" smashed="yes">
-<attribute name="VALUE" x="162.56" y="-9.906" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="154.94" y="0.508" size="1.778" layer="95" font="vector"/>
-</instance>
 <instance part="120" gate="G$1" x="177.8" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="177.8" y="3.556" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="177.8" y="6.604" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
+</instance>
+<instance part="LIPO_CONNECTOR_2" gate="G$1" x="152.4" y="96.52" smashed="yes">
+<attribute name="VALUE" x="149.86" y="91.694" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="149.86" y="102.108" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="CAN_CONNECTOR" gate="J$1" x="165.1" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="162.56" y="-25.146" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="162.56" y="-12.192" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -6947,6 +6952,16 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <wire x1="170.18" y1="15.24" x2="167.64" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="15.24" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
 <label x="167.64" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LIPO_CONNECTOR_2" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="96.52" x2="162.56" y2="96.52" width="0.1524" layer="91"/>
+<label x="162.56" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CAN_CONNECTOR" gate="J$1" pin="1"/>
+<wire x1="172.72" y1="-20.32" x2="177.8" y2="-20.32" width="0.1524" layer="91"/>
+<label x="177.8" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -7134,6 +7149,11 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <wire x1="160.02" y1="114.3" x2="162.56" y2="114.3" width="0.1524" layer="91"/>
 <label x="162.56" y="114.3" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LIPO_CONNECTOR_2" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
+<label x="162.56" y="99.06" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
@@ -7257,10 +7277,12 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <wire x1="185.42" y1="10.16" x2="172.72" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="120" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="10.16" x2="172.72" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="CAN_HEADER" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="5.08" x2="172.72" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="172.72" y="5.08"/>
 <label x="177.8" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CAN_CONNECTOR" gate="J$1" pin="3"/>
+<wire x1="172.72" y1="-15.24" x2="177.8" y2="-15.24" width="0.1524" layer="91"/>
+<label x="177.8" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -7269,11 +7291,12 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <pinref part="120" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="7.62" x2="182.88" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="7.62" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="5.08" x2="182.88" y2="-5.08" width="0.1524" layer="91"/>
-<junction x="182.88" y="5.08"/>
-<pinref part="CAN_HEADER" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="-5.08" x2="172.72" y2="-5.08" width="0.1524" layer="91"/>
-<label x="172.72" y="-7.62" size="1.778" layer="95"/>
+<label x="182.88" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CAN_CONNECTOR" gate="J$1" pin="2"/>
+<wire x1="172.72" y1="-17.78" x2="177.8" y2="-17.78" width="0.1524" layer="91"/>
+<label x="177.8" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANTX" class="0">
