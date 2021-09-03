@@ -6737,6 +6737,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="120" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="1206" package3d_urn="urn:adsk.eagle:package:39654/1" value=" "/>
 <part name="LIPO_CONNECTOR_2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="CAN_CONNECTOR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
+<part name="RECOVERY_HEADER" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -6796,6 +6797,10 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <instance part="CAN_CONNECTOR" gate="J$1" x="165.1" y="-17.78" smashed="yes">
 <attribute name="VALUE" x="162.56" y="-25.146" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="162.56" y="-12.192" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="RECOVERY_HEADER" gate="G$1" x="88.9" y="99.06" smashed="yes" rot="R180">
+<attribute name="VALUE" x="93.98" y="106.426" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="93.98" y="90.932" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -6962,6 +6967,11 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <pinref part="CAN_CONNECTOR" gate="J$1" pin="1"/>
 <wire x1="172.72" y1="-20.32" x2="177.8" y2="-20.32" width="0.1524" layer="91"/>
 <label x="177.8" y="-20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RECOVERY_HEADER" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="91"/>
+<label x="76.2" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -7154,6 +7164,11 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <wire x1="160.02" y1="99.06" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
 <label x="162.56" y="99.06" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="RECOVERY_HEADER" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
+<label x="76.2" y="101.6" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
@@ -7322,6 +7337,30 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <pinref part="U$1" gate="G$1" pin="23-A9/CRX1/MCLK1"/>
 <wire x1="22.86" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
 <label x="17.78" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RCV1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="26-A12/MOSI1"/>
+<wire x1="22.86" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
+<label x="15.24" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RECOVERY_HEADER" gate="G$1" pin="3"/>
+<wire x1="83.82" y1="96.52" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
+<label x="76.2" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RCV2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="27-A13/SCK1"/>
+<wire x1="22.86" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<label x="15.24" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RECOVERY_HEADER" gate="G$1" pin="4"/>
+<wire x1="83.82" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
+<label x="76.2" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
