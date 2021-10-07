@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -2126,6 +2126,7 @@ CONVERTER</text>
 <part name="LIPO_CONNECTOR_2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="U$3" library="ICM20948" deviceset="ICM20948" device=""/>
 <part name="UART" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="U$4" library="BLTFootprints" deviceset="BUCK_CONVERTER" device="" technology="3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -2153,6 +2154,10 @@ CONVERTER</text>
 <attribute name="VALUE" x="111.76" y="38.354" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="111.76" y="48.768" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="U$4" gate="G$1" x="160.02" y="12.7" smashed="yes">
+<attribute name="NAME" x="154.94" y="20.828" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="154.94" y="5.08" size="1.778" layer="94"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2164,14 +2169,14 @@ CONVERTER</text>
 <pinref part="U$2" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="3V3-2"/>
-<wire x1="60.96" y1="86.36" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
-<label x="60.96" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$3" gate="G$1" pin="VIN"/>
 <wire x1="109.22" y1="20.32" x2="104.14" y2="20.32" width="0.1524" layer="91"/>
 <label x="101.6" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="VO+"/>
+<wire x1="165.1" y1="10.16" x2="170.18" y2="10.16" width="0.1524" layer="91"/>
+<label x="170.18" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2229,6 +2234,11 @@ CONVERTER</text>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <wire x1="109.22" y1="15.24" x2="104.14" y2="15.24" width="0.1524" layer="91"/>
 <label x="101.6" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="165.1" y1="12.7" x2="170.18" y2="12.7" width="0.1524" layer="91"/>
+<label x="170.18" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -2310,6 +2320,11 @@ CONVERTER</text>
 <wire x1="160.02" y1="55.88" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
 <label x="162.56" y="55.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="IN+"/>
+<wire x1="165.1" y1="15.24" x2="170.18" y2="15.24" width="0.1524" layer="91"/>
+<label x="170.18" y="15.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BMPINT" class="0">
 <segment>
@@ -2339,15 +2354,6 @@ CONVERTER</text>
 <wire x1="198.12" y1="73.66" x2="193.04" y2="73.66" width="0.1524" layer="91"/>
 <label x="190.5" y="73.66" size="1.778" layer="95"/>
 <pinref part="U$2" gate="G$1" pin="CS"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="3V3-3"/>
-<wire x1="63.5" y1="86.36" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="3V3-1"/>
-<wire x1="58.42" y1="86.36" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TX" class="0">
