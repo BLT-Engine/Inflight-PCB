@@ -1,0 +1,9 @@
+Partlist exported from /Users/shawn/Documents/GitHub/Inflight-PCB/Simple-Small-Version/Small Inflight-PCB/BLT_Small_Inflight_PCB_Oct_4.sch at 10/13/21 12:28 PM
+
+Qty Value            Device           Package                 Parts                  Description                                                                                                     VOLTAGE
+2                    CONN_02          1X02                    LIPO_CONNECTOR_2, UART Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections        
+1                    CONN_02PTH4      1X02_XTRA_BIG           J1                     Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections        
+1   BMP390           BMP390           MICROBUILDER_1X08_ROUND U$2                                                                                                                                           
+1   BUCK_CONVERTER5V BUCK_CONVERTER5V 1X04                    U$6                                                                                                                                    5V     
+1   ICM20948         ICM20948         ICM20948                U$3                                                                                                                                           
+1   TEENSY41         TEENSY41         TEENSY41                U$1                                                                                                                                           

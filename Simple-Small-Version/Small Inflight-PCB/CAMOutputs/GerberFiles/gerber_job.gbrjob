@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-10-13T19:28:23Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "BLT_Small_Inflight_PCB_Oct_4"
+        },
+        "Owner": "Shawn Joseph <shawnjoseph2001@gmail.com>",
+        "Size": {
+            "X": 65.556516,
+            "Y": 54.356
+        }
+    }
+}
